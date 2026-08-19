@@ -214,6 +214,8 @@ ADC, PWM, UART, and debugging interfaces for the application.
 | Moisture Removal | Moist air passes through the lint filter and trap duct while being extracted from the drum. |
 | Exhaust | Air exits the system through the exhaust duct. |
 
+![alt text](images/photos/Electric_dryer.png)
+
 ---
 
 ## Gas Dryer Operation
@@ -226,6 +228,9 @@ ADC, PWM, UART, and debugging interfaces for the application.
 | Drum Air Flow | Heated air enters the drum to evaporate moisture from the clothes. |
 | Moisture Removal | Moist air passes through the lint filter and trap duct while being extracted from the drum. |
 | Exhaust | Air exits the system through the exhaust duct. |
+
+![alt text](images/photos/Gas_dryer.png)
+
 
 ---
 
@@ -340,6 +345,8 @@ ADC, PWM, UART, and debugging interfaces for the application.
 - User Interface Assembly
 - Door Assembly
 - Air Inlet Louvers
+
+![alt text](images/photos/Parts_of_dryer.png)
 
 ---------------------------------------------------------------------------------------
 # User Interface Controls Specification
