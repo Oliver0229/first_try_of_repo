@@ -1,257 +1,355 @@
-# User Interface Controls Specification  (Dryer)
+# User Interface Controls Specification (Dryer)
 
+This document describes the available user interface controls, indicators, and cycle selections for the Dryer product.
+
+---
+
+# Cycle Selector
+
+The cycle selector is implemented through a rotary knob that allows the user to choose the desired drying program. Each position corresponds to a predefined cycle profile and drying level.
 
 ## Cottons - Less Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Cottons - Less Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Cottons / Less Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures gentle drying for cotton garments |
-| Acceptance Criteria | When selected, the system applies the Cottons profile with the Less Dry level |
+The **Cottons - Less Dry Cycle** is a knob-selectable option identified on the user interface panel as **"Cottons / Less Dry"**.
+
+When selected, the dryer applies a gentle drying profile designed for cotton garments while maintaining a lower dryness target.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures gentle drying for cotton garments.
+
+**Acceptance Criteria:**
+When selected, the system applies the Cottons profile with the Less Dry level.
+
+---
 
 ## Cottons - Medium Dry / Normal Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Cottons - Medium Dry / Normal Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Cottons / Medium Dry Normal |
-| Values / States | Active / Inactive |
-| Expected Action | Configures normal drying for cotton garments |
-| Acceptance Criteria | When selected, the system applies the Cottons profile with the Medium Dry level |
+The **Cottons - Medium Dry / Normal Cycle** is identified on the panel as **"Cottons / Medium Dry Normal"**.
+
+This option provides standard drying performance for cotton garments and represents the default dryness target for typical loads.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures normal drying for cotton garments.
+
+**Acceptance Criteria:**
+When selected, the system applies the Cottons profile with the Medium Dry level.
+
+---
 
 ## Cottons - More Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Cottons - More Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Cottons / More Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures intensive drying for cotton garments |
-| Acceptance Criteria | When selected, the system applies the Cottons profile with the More Dry level |
+The **Cottons - More Dry Cycle** is identified on the panel as **"Cottons / More Dry"**.
+
+This cycle increases the drying intensity to achieve a higher dryness level for cotton garments.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures intensive drying for cotton garments.
+
+**Acceptance Criteria:**
+When selected, the system applies the Cottons profile with the More Dry level.
+
+---
 
 ## Delicates - Less Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Delicates - Less Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Delicates / Less Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures gentle drying for delicate garments |
-| Acceptance Criteria | When selected, the system applies the Delicates profile with the Less Dry level |
+The **Delicates - Less Dry Cycle** is identified on the panel as **"Delicates / Less Dry"**.
+
+This cycle provides gentle drying conditions intended to protect delicate fabrics while achieving a light dryness level.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures gentle drying for delicate garments.
+
+**Acceptance Criteria:**
+When selected, the system applies the Delicates profile with the Less Dry level.
+
+---
 
 ## Delicates - More Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Delicates - More Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Delicates / More Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures intensive drying for delicate garments |
-| Acceptance Criteria | When selected, the system applies the Delicates profile with the More Dry level |
+The **Delicates - More Dry Cycle** is identified on the panel as **"Delicates / More Dry"**.
+
+This option applies a more aggressive drying target while maintaining the Delicates cycle profile.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures intensive drying for delicate garments.
+
+**Acceptance Criteria:**
+When selected, the system applies the Delicates profile with the More Dry level.
+
+---
 
 ## Casuals - Less Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Casuals - Less Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Casuals / Less Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures gentle drying for casual clothing |
-| Acceptance Criteria | When selected, the system applies the Casuals profile with the Less Dry level |
+The **Casuals - Less Dry Cycle** is identified on the panel as **"Casuals / Less Dry"**.
+
+This option provides reduced dryness for everyday casual garments.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures gentle drying for casual clothing.
+
+**Acceptance Criteria:**
+When selected, the system applies the Casuals profile with the Less Dry level.
+
+---
 
 ## Casuals - More Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Casuals - More Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Casuals / More Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures intensive drying for casual clothing |
-| Acceptance Criteria | When selected, the system applies the Casuals profile with the More Dry level |
+The **Casuals - More Dry Cycle** is identified on the panel as **"Casuals / More Dry"**.
+
+This option applies a higher drying target while maintaining the Casuals cycle profile.
+
+**Control Type:** Knob Option
+
+**Available States:**
+- Active
+- Inactive
+
+**Expected Action:**
+Configures intensive drying for casual clothing.
+
+**Acceptance Criteria:**
+When selected, the system applies the Casuals profile with the More Dry level.
+
+---
+
+# Timed Dry Cycles
+
+The Timed Dry group provides fixed-duration drying programs that operate independently of moisture sensing algorithms.
 
 ## Time Dry - 80 Min. Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Time Dry - 80 Min. Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Time Dry / 80 Min. |
-| Values / States | Active / Inactive |
-| Expected Action | Configures a fixed 80-minute drying cycle |
-| Acceptance Criteria | When selected, the timer is set to 80 minutes |
+The **80 Minute Timed Dry Cycle** is identified as **"Time Dry / 80 Min."** and provides a fixed-duration drying operation.
+
+**Expected Action:**
+Configures a fixed 80-minute drying cycle.
+
+**Acceptance Criteria:**
+When selected, the timer is set to 80 minutes.
+
+---
 
 ## Time Dry - 60 Min. Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Time Dry - 60 Min. Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Time Dry / 60 Min. |
-| Values / States | Active / Inactive |
-| Expected Action | Configures a fixed 60-minute drying cycle |
-| Acceptance Criteria | When selected, the timer is set to 60 minutes |
+The **60 Minute Timed Dry Cycle** is identified as **"Time Dry / 60 Min."**.
+
+**Expected Action:**
+Configures a fixed 60-minute drying cycle.
+
+**Acceptance Criteria:**
+When selected, the timer is set to 60 minutes.
+
+---
 
 ## Time Dry - 40 Min. Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Time Dry - 40 Min. Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Time Dry / 40 Min. |
-| Values / States | Active / Inactive |
-| Expected Action | Configures a fixed 40-minute drying cycle |
-| Acceptance Criteria | When selected, the timer is set to 40 minutes |
+The **40 Minute Timed Dry Cycle** is identified as **"Time Dry / 40 Min."**.
+
+**Expected Action:**
+Configures a fixed 40-minute drying cycle.
+
+**Acceptance Criteria:**
+When selected, the timer is set to 40 minutes.
+
+---
 
 ## Time Dry - 30 Damp Dry Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Time Dry - 30 Damp Dry Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Time Dry / 30 Damp Dry |
-| Values / States | Active / Inactive |
-| Expected Action | Configures a 30-minute damp-dry cycle |
-| Acceptance Criteria | When selected, the system applies the Damp Dry profile with a duration of 30 minutes |
+The **30 Minute Damp Dry Cycle** is identified as **"Time Dry / 30 Damp Dry"**.
+
+This cycle is intended to leave garments slightly damp for easier ironing or post-processing.
+
+**Expected Action:**
+Configures a 30-minute damp-dry cycle.
+
+**Acceptance Criteria:**
+When selected, the system applies the Damp Dry profile with a duration of 30 minutes.
+
+---
 
 ## Time Dry - 20 Dewrinkle Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Time Dry - 20 Dewrinkle Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Time Dry / 20 Dewrinkle |
-| Values / States | Active / Inactive |
-| Expected Action | Configures a 20-minute wrinkle-release cycle |
-| Acceptance Criteria | When selected, the system applies the Dewrinkle profile with a duration of 20 minutes |
+The **20 Minute Dewrinkle Cycle** is identified on the panel as **"Time Dry / 20 Dewrinkle"**.
+
+This cycle is intended to reduce wrinkles in previously dried garments.
+
+**Expected Action:**
+Configures a 20-minute wrinkle-release cycle.
+
+**Acceptance Criteria:**
+When selected, the system applies the Dewrinkle profile with a duration of 20 minutes.
+
+---
 
 ## Time Dry - 10 Min. Cycle
 
-| Field | Value |
-|------------|------------|
-| Component | Time Dry - 10 Min. Cycle |
-| Control Type | Knob Option |
-| Label on the Panel | Time Dry / 10 Min. |
-| Values / States | Active / Inactive |
-| Expected Action | Configures a quick 10-minute drying cycle |
-| Acceptance Criteria | When selected, the timer is set to 10 minutes |
+The **10 Minute Timed Dry Cycle** is identified as **"Time Dry / 10 Min."**.
 
-## Temperature Selector
+**Expected Action:**
+Configures a quick 10-minute drying cycle.
 
-| Field | Value |
-|------------|------------|
-| Component | Temperature Selector |
-| Control Type | Rotary Knob |
-| Label on the Panel | Temperature |
-| Values / States | Regular, Medium, Low, No Heat |
-| Expected Action | Changes the heat level applied during drying |
-| Acceptance Criteria | Only one temperature can be active at a time; the system records the selection before starting |
+**Acceptance Criteria:**
+When selected, the timer is set to 10 minutes.
+
+---
+
+# Temperature Selector
+
+The Temperature Selector is implemented through a dedicated rotary knob labeled **"Temperature"**.
+
+The user can select one of four available heat settings before starting the cycle. Only one temperature level can be active at any given time.
+
+**Available Settings:**
+- Regular
+- Medium
+- Low
+- No Heat
+
+**Acceptance Criteria:**
+The selected temperature level shall be recorded by the system before cycle execution.
 
 ## Regular Temperature
 
-| Field | Value |
-|------------|------------|
-| Component | Regular Temperature |
-| Control Type | Knob Option |
-| Label on the Panel | Regular |
-| Values / States | Active / Inactive |
-| Expected Action | Applies standard high heat |
-| Acceptance Criteria | When selected, the system sets the heat level to Regular |
+Applies the standard high-heat drying profile.
 
 ## Medium Temperature
 
-| Field | Value |
-|------------|------------|
-| Component | Medium Temperature |
-| Control Type | Knob Option |
-| Label on the Panel | Medium |
-| Values / States | Active / Inactive |
-| Expected Action | Applies medium heat |
-| Acceptance Criteria | When selected, the system sets the heat level to Medium |
+Applies a medium-heat drying profile.
 
 ## Low Temperature
 
-| Field | Value |
-|------------|------------|
-| Component | Low Temperature |
-| Control Type | Knob Option |
-| Label on the Panel | Low |
-| Values / States | Active / Inactive |
-| Expected Action | Applies low heat |
-| Acceptance Criteria | When selected, the system sets the heat level to Low |
+Applies a low-heat drying profile.
 
 ## No Heat Temperature
 
-| Field | Value |
-|------------|------------|
-| Component | No Heat Temperature |
-| Control Type | Knob Option |
-| Label on the Panel | No Heat |
-| Values / States | Active / Inactive |
-| Expected Action | Runs the cycle without heat (air only) |
-| Acceptance Criteria | When selected, the system disables the heating element during the cycle |
+Disables all heating functions and operates using ambient air only.
+
+---
+
+# Primary Controls
 
 ## Start / Pause Button
 
-| Field | Value |
-|------------|------------|
-| Component | Start / Pause Button |
-| Control Type | Primary Button |
-| Label on the Panel | Start / Pause |
-| Values / States | Ready, Running, Paused, Completed |
-| Expected Action | Starts, pauses, or resumes the drying cycle |
-| Acceptance Criteria | With a valid configuration, Start begins the cycle; during execution, Pause stops the process while retaining the current settings |
+The **Start / Pause Button** is the primary user control used to start, pause, and resume the drying process.
+
+**Control Type:** Primary Button
+
+**Available States:**
+- Ready
+- Running
+- Paused
+- Completed
+
+**Expected Action:**
+Starts, pauses, or resumes the active drying cycle.
+
+**Acceptance Criteria:**
+With a valid configuration selected, pressing Start begins the cycle. During operation, pressing the button pauses execution while retaining all current settings.
+
+---
+
+# Status Indicators
+
+The dryer uses dedicated status indicators to communicate the active phase of the drying process.
 
 ## Damp Indicator
 
-| Field | Value |
-|------------|------------|
-| Component | Damp Indicator |
-| Control Type | Indicator Light |
-| Label on the Panel | Damp |
-| Values / States | On / Off |
-| Expected Action | Indicates that the damp-dry phase is active |
-| Acceptance Criteria | The indicator turns on exclusively during the Damp phase |
+The **Damp Indicator** is identified by the label **"Damp"**.
+
+When illuminated, the system is operating within the damp-dry stage.
+
+**Available States:**
+- On
+- Off
+
+**Acceptance Criteria:**
+The indicator is active only during the Damp phase.
+
+---
 
 ## Dry Indicator
 
-| Field | Value |
-|------------|------------|
-| Component | Dry Indicator |
-| Control Type | Indicator Light |
-| Label on the Panel | Dry |
-| Values / States | On / Off |
-| Expected Action | Indicates that the main drying phase is active |
-| Acceptance Criteria | The indicator turns on exclusively during the Dry phase |
+The **Dry Indicator** is identified by the label **"Dry"**.
+
+When illuminated, the system is operating within the primary drying stage.
+
+**Available States:**
+- On
+- Off
+
+**Acceptance Criteria:**
+The indicator is active only during the Dry phase.
+
+---
 
 ## Cooling Indicator
 
-| Field | Value |
-|------------|------------|
-| Component | Cooling Indicator |
-| Control Type | Indicator Light |
-| Label on the Panel | Cooling |
-| Values / States | On / Off |
-| Expected Action | Indicates that the cooling phase is active |
-| Acceptance Criteria | The indicator turns on exclusively during the Cooling phase |
+The **Cooling Indicator** is identified by the label **"Cooling"**.
+
+When illuminated, the system is operating within the cooling stage.
+
+**Available States:**
+- On
+- Off
+
+**Acceptance Criteria:**
+The indicator is active only during the Cooling phase.
+
+---
+
+# Energy Saving Function
 
 ## E-Dry Control
 
-| Field | Value |
-|------------|------------|
-| Component | E-Dry Control |
-| Control Type | Lever / Toggle |
-| Label on the Panel | E-Dry |
-| Values / States | Enabled / Disabled |
-| Expected Action | Activates energy-efficient drying mode |
-| Acceptance Criteria | When enabled, the visual state changes and the cycle configuration includes E-Dry mode |
+The **E-Dry Control** enables the energy-saving operating mode of the dryer.
 
-![DryerUIPhoto](../images/photos/Dryer_UI_Photo.png)
+**Control Type:** Lever / Toggle
+
+**Available States:**
+- Enabled
+- Disabled
+
+**Expected Action:**
+Activates energy-efficient drying operation.
+
+**Acceptance Criteria:**
+When enabled, the visual indication changes and the cycle configuration includes E-Dry mode.
+
+---
+
+![PhotoDryerUI](../images/photos/Dryer_UI_Photo.png)
