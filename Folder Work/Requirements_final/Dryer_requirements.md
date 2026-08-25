@@ -5,11 +5,11 @@ The lid switch provides feedback to the control when the lid is open or closed.
 ### No. Part
 - **290D3070P002**
 
-![Lidswitch](../../images\photos\Dryer\lid_switchlocked.jpg)
+![Lidswitch](../../images/photos/Dryer/lid_switchlocked.png)
 
 # Thermistor
 
-## Requirement
+## Requirements
 On start key release, the SSD should reflect the inlet/outlet temperature. The drum motor should start, and the corresponding coil should turn on (gas units just turn on the heat). Opening the dryer door or deselecting the test will turn off the drum and heaters.
 
 ### No. Part
