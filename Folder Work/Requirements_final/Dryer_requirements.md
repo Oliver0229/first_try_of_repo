@@ -20,7 +20,7 @@ On start key release, the SSD should reflect the inlet/outlet temperature. The d
 # Sensor Rod
 
 ## Requirement
-The moisture rod sensor shall provide a continuous moisture-related electrical signal to the Main Control during sensor-dry operation, and the Main Control shall use this signal to determine dryness progress, dynamically adjust remaining cycle time, and trigger phase transitions toward dry/ready completion while preserving safe operation and service diagnostics; if the sensor input indicates an abnormal condition, the control shall register the corresponding service-visible fault according to platform criteria without delegating interpretation to the user interface.
+The moisture rod sensor shall provide a continuous moisture-related electrical signal to the control during sensor-dry operation, and the control shall use this signal to determine dryness progress, dynamically adjust remaining cycle time, and trigger phase transitions toward dry/ready completion while preserving safe operation and service diagnostics; if the sensor input indicates an abnormal condition, the control shall register the corresponding service-visible fault according to platform criteria without delegating interpretation to the user interface.
 
 ### No. Part
 - **540B266P001**
