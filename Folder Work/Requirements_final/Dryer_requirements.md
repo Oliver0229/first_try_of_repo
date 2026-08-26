@@ -26,7 +26,7 @@ The Gas Valve system shall control the delivery of gas to the dryer burner by op
 - 234D3046P001
 
 ![GasValve1](../../images/photos/Dryer/Gas_Valve1.png)
-![GasValve2](../../images\photos\Dryer\Gas_Valve2.png)
+![GasValve2](../../images/photos/Dryer/Gas_Valve2.png)
 
 
 
