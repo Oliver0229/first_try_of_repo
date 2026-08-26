@@ -1,12 +1,3 @@
-# Lid Switch/Locked
-
-## Requirement
-The lid switch provides feedback to the control when the lid is open or closed.
-### No. Part
-- **290D3070P002**
-
-![Lidswitch](../../images/photos/Dryer/lid_switchlocked.png)
-
 # Thermistor
 
 ## Requirements
@@ -26,3 +17,25 @@ The moisture rod sensor shall provide a continuous moisture-related electrical s
 - **540B266P001**
 
 ![SensorRod](../../images/photos/Dryer/Sensor_Rod.png)
+
+# Gas Valve
+## Requirement
+The Gas Valve system shall control the delivery of gas to the dryer burner by opening only when heating is requested and all required operating and safety conditions are satisfied; the control shall energize the valve to provide the gas flow necessary for the selected drying temperature, continuously coordinate valve operation with the ignition and temperature management functions, immediately remove gas flow when a heat request is terminated or a fault condition is detected, and prevent unintended gas delivery whenever a valid activation command is not present, ensuring safe and reliable dryer heating operation.
+
+### No. Part
+- 234D3046P001
+
+![GasValve1](../../images/photos/Dryer/Gas_Valve1.png)
+![GasValve2](../../images\photos\Dryer\Gas_Valve2.png)
+
+
+
+
+# Door Switch
+## Requirement
+The Door Switch system shall protect the user by continuously monitoring the dryer door status and providing open and closed state feedback to the Main Control; the control shall verify that the door is closed before allowing cycle initiation, immediately respond to a door opening event during operation by disabling functions that require a closed-door condition, maintain accurate door status monitoring throughout the cycle, and prevent operation whenever an unsafe door-open condition exists, ensuring safe dryer operation and user access protection. 
+
+### No. Part
+- 248C1157P001
+
+![DoorSwitch](../../images/photos/Dryer/Door_Switch.png)
