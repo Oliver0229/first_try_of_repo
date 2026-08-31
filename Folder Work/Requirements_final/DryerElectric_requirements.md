@@ -8,6 +8,8 @@ On start key release, the SSD should reflect the inlet/outlet temperature. The d
 
 ![Thermistor](../../images/photos/Dryer/Thermistor.png)
 
+---
+
 # Sensor Rod
 
 ## Requirement
@@ -18,15 +20,7 @@ The moisture rod sensor shall provide a continuous moisture-related electrical s
 
 ![SensorRod](../../images/photos/Dryer/Sensor_Rod.png)
 
-# Gas Valve
-## Requirement
-The Gas Valve system shall control the delivery of gas to the dryer burner by opening only when heating is requested and all required operating and safety conditions are satisfied; the control shall energize the valve to provide the gas flow necessary for the selected drying temperature, continuously coordinate valve operation with the ignition and temperature management functions, immediately remove gas flow when a heat request is terminated or a fault condition is detected, and prevent unintended gas delivery whenever a valid activation command is not present, ensuring safe and reliable dryer heating operation.
-
-### No. Part
-- 234D3046P001
-
-![GasValve1](../../images/photos/Dryer/Gas_Valve1.png)
-![GasValve2](../../images/photos/Dryer/Gas_Valve2.png)
+---
 
 # Door Switch
 ## Requirement
@@ -36,3 +30,15 @@ The Door Switch system shall protect the user by continuously monitoring the dry
 - 248C1157P001
 
 ![DoorSwitch](../../images/photos/Dryer/Door_Switch.png)
+
+---
+
+# Motor Drive
+## Requirement
+The dryer drive motor shall rotate the drum during an active drying cycle to provide continuous load tumbling.
+The Main Control shall energize the drive motor when a valid cycle start request is received and all operating conditions are satisfied.
+The Main Control shall de-energize the drive motor when the drying cycle is completed or interrupted.
+### No. Part
+
+---
+
