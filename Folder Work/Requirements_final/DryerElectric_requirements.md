@@ -28,12 +28,9 @@ The Gas Valve system shall control the delivery of gas to the dryer burner by op
 ![GasValve1](../../images/photos/Dryer/Gas_Valve1.png)
 ![GasValve2](../../images/photos/Dryer/Gas_Valve2.png)
 
-
-
-
 # Door Switch
 ## Requirement
-The Door Switch system shall protect the user by continuously monitoring the dryer door status and providing open and closed state feedback to the Main Control; the control shall verify that the door is closed before allowing cycle initiation, immediately respond to a door opening event during operation by disabling functions that require a closed-door condition, maintain accurate door status monitoring throughout the cycle, and prevent operation whenever an unsafe door-open condition exists, ensuring safe dryer operation and user access protection. 
+The Door Switch system shall protect the user by continuously monitoring the dryer door status and providing open and closed state feedback to the control; the control shall verify that the door is closed before allowing cycle initiation, immediately respond to a door opening event during operation by disabling functions that require a closed-door condition, maintain accurate door status monitoring throughout the cycle, and prevent operation whenever an unsafe door-open condition exists, ensuring safe dryer operation and user access protection. 
 
 ### No. Part
 - 248C1157P001

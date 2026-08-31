@@ -1,6 +1,7 @@
 # Lid Switch/Locked
 ## Requirement
 The Lid Lock system shall protect the user from access to moving parts by commanding and verifying lid lock transitions during hazardous operating conditions, especially when basket speed prevents a safe stop; the control shall drive the lock actuator, validate lock feedback after the defined verification delay, enforce retry and timeout logic for failed transitions, raise service faults when lock/unlock cannot be achieved, and cancel or block cycle operation whenever an unsafe unlocked-at-speed condition is detected, ensuring the appliance remains in a safe state until normal lock monitoring criteria are restored.
+
 ### No. Part
 - **290D3070P002**
 
