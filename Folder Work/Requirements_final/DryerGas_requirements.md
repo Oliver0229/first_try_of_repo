@@ -1,36 +1,100 @@
-# Ignitor 
+# **Gas Dryer Requirements**
+
+# Gas Valve Coils
 ## Requirement
-The igniter shall generate sufficient thermal energy to ignite the gas-air mixture within the combustion chamber.
-The Main Control shall energize the igniter when a valid heat request is present.
-The igniter shall reach ignition temperature before the gas valve is permitted to open.
-### No. Part
-
----
-
-# Gas Valve
-## Requirement
-The gas valve shall remain closed when no heating request is present.
-The gas valve shall open only after a valid ignition sequence has been established.
-The Main Control shall de-energize the gas valve when heating demand is removed or a fault condition is detected.
-### No. Part
-
----
-
-# Gas Valve
-## Requirement
-The Gas Valve system shall control the delivery of gas to the dryer burner by opening only when heating is requested and all required operating and safety conditions are satisfied; the control shall energize the valve to provide the gas flow necessary for the selected drying temperature, continuously coordinate valve operation with the ignition and temperature management functions, immediately remove gas flow when a heat request is terminated or a fault condition is detected, and prevent unintended gas delivery whenever a valid activation command is not present, ensuring safe and reliable dryer heating operation.
+The Gas Valve Coils shall receive control commands from the Main Control Board to actuate the Gas Valve and permit gas flow to the burner only when heating is requested and all required operating and safety conditions are satisfied. The coils shall de-energize immediately when heating is terminated or a fault condition is detected, preventing unintended gas flow.
 
 ### No. Part
 - 234D3046P001
 
-![GasValve1](../../images/photos/Dryer/Gas_Valve1.png)
-![GasValve2](../../images/photos/Dryer/Gas_Valve2.png)
+![GasValveAssembly](../../images/photos/Dryer/Gas_Valve1.png)
+
+# Gas Valve
+## Requirement
+The Gas Valve shall permit gas flow to the dryer burner only when actuated by the Gas Valve Coils. The valve shall provide a controlled gas path for burner operation and shall immediately stop gas flow when coil energization is removed, preventing unintended gas delivery and supporting safe dryer heating operation.
+
+### No. Part
+- 234D3046P001
+
+![GasValveAssembly](../../images/photos/Dryer/Gas_Valve2.png)
+
+---
+
+# Moisture Sensor Rod
+
+## Requirement
+The moisture rod sensor shall provide a continuous moisture-related electrical signal to the control during sensor-dry operation, and the control shall use this signal to determine dryness progress, dynamically adjust remaining cycle time, and trigger phase transitions toward dry/ready completion while preserving safe operation and service diagnostics; if the sensor input indicates an abnormal condition, the control shall register the corresponding service-visible fault according to platform criteria without delegating interpretation to the user interface.
+
+### No. Part
+- **540B266P001**
+
+![SensorRod](../../images/photos/Dryer/Sensor_Rod.png)
+
+---
+
+# Door Switch
+## Requirement
+The Door Switch system shall protect the user by continuously monitoring the dryer door status and providing open and closed state feedback to the control; the control shall verify that the door is closed before allowing cycle initiation, immediately respond to a door opening event during operation by disabling functions that require a closed-door condition, maintain accurate door status monitoring throughout the cycle, and prevent operation whenever an unsafe door-open condition exists, ensuring safe dryer operation and user access protection. 
+
+### No. Part
+- 248C1157P001
+
+![DoorSwitch](../../images/photos/Dryer/Door_Switch.png)
+
+---
+
+# Dryer Drive Motor
+## Requirement
+The Dryer Drive Motor system shall provide drum rotation and airflow generation throughout the drying process by receiving motor enable commands from the Main Control, driving the drum and blower assembly at the required operating speed, transitioning the internal centrifugal switch from start to run operation, enabling heat source operation only after valid motor rotation has been established, shutting down when cycle completion or interruption conditions occur, and maintaining safe operation through automatic overload protection whenever abnormal motor loading or overheating conditions are detected.
+
+### No. Part
+- **234D1469P008**
+
+![DriveMotor](../../images/photos/Dryer/DriveMotor.png)
+---
+
+# Ignitor 
+## Requirement
+The Igniter system shall initiate burner ignition by generating sufficient thermal energy to reach the required ignition temperature before gas admission is permitted; the Main Control shall energize the igniter during a heating request, maintain ignition power until proper ignition conditions are achieved, and coordinate igniter operation with flame detection and gas valve sequencing to ensure safe and reliable burner ignition during each heating cycle.
+
+### No. Part
+- **248C1186P002**
+
+![Ignitor](../../images/photos/Dryer/Ignitor.png)
 
 ---
 
 # Flame Detector
 ## Requirement
-The flame detector shall detect radiant heat generated by the igniter and burner flame.
-The Main Control shall use flame detector feedback during the ignition sequence.
-The Main Control shall use flame detector feedback during the ignition sequence.
+The Flame Detector system shall provide ignition status verification by monitoring radiant heat generated by the igniter and burner flame, transitioning from its normal state when ignition conditions are achieved, supplying feedback required for gas valve actuation, maintaining ignition validation while combustion is present, and preventing continuation of the burner ignition sequence whenever valid flame detector transitions are not detected within the expected operating period.
+
 ### No. Part
+- **109B8868G001**
+
+![FlameDetector](../../images/photos/Dryer/FlameDetector.png)
+
+---
+
+# Safety Thermostat
+## Requirement
+The Safety Thermostat system shall protect the appliance from abnormal heating conditions, interrupting power to the heating source whenever the calibrated safety threshold is exceeded, maintaining protection throughout the overheating condition, and automatically restoring operation only after the temperature has returned within the defined safe operating range.
+
+### No. Part
+
+---
+
+# Outlet Control Thermostat
+## Requirement
+The Outlet Control Thermostat shall regulate drying performance by monitoring outgoing airflow temperature and controlling heat source operation to maintain the required drying temperature profile; the thermostat shall interrupt heating when the defined outlet temperature threshold is exceeded and automatically restore heating operation once outlet temperature returns to the acceptable operating range.
+
+### No. Part
+
+---
+
+# High Limit Thermostat
+## Requirement
+The High Limit Thermostat system shall provide secondary thermal protection for the dryer by monitoring critical temperature conditions near the heating source, interrupting motor operation whenever temperatures exceed the maximum allowable safety limit, preventing continued operation under hazardous overheating conditions, and automatically restoring operation only after temperature levels return below the thermostat reset threshold.
+
+### No. Part
+
+

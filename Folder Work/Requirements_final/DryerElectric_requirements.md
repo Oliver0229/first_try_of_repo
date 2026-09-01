@@ -35,10 +35,41 @@ The Door Switch system shall protect the user by continuously monitoring the dry
 
 # Motor Drive
 ## Requirement
-The dryer drive motor shall rotate the drum during an active drying cycle to provide continuous load tumbling.
-The Main Control shall energize the drive motor when a valid cycle start request is received and all operating conditions are satisfied.
-The Main Control shall de-energize the drive motor when the drying cycle is completed or interrupted.
+The Dryer Drive Motor system shall provide drum rotation and airflow generation throughout the drying process by receiving motor enable commands from the Main Control, driving the drum and blower assembly at the required operating speed, transitioning the internal centrifugal switch from start to run operation, enabling heat source operation only after valid motor rotation has been established, shutting down when cycle completion or interruption conditions occur, and maintaining safe operation through automatic overload protection whenever abnormal motor loading or overheating conditions are detected.
+
+### No. Part
+- **234D1469P008**
+
+![DriveMotor](../../images/photos/Dryer/DriveMotor.png)
+
+---
+
+# Safety Thermostat
+## Requirement
+The Safety Thermostat system shall protect the appliance from abnormal heating conditions, interrupting power to the heating source whenever the calibrated safety threshold is exceeded, maintaining protection throughout the overheating condition, and automatically restoring operation only after the temperature has returned within the defined safe operating range.
+
 ### No. Part
 
 ---
 
+# Inlet Control Thermostat
+## Requirement
+The Inlet Control Thermostat shall regulate dryer heating performance by monitoring incoming air temperature at the heat source, cycling the heating system as required to maintain controlled operating temperatures, interrupting heating operation whenever the specified control threshold is exceeded, and automatically restoring heating capability once normal operating temperatures have been reestablished.
+
+### No. Part
+
+---
+
+# Outlet Control Thermostat
+## Requirement
+The Outlet Control Thermostat shall regulate drying performance by monitoring outgoing airflow temperature and controlling heat source operation to maintain the required drying temperature profile; the thermostat shall interrupt heating when the defined outlet temperature threshold is exceeded and automatically restore heating operation once outlet temperature returns to the acceptable operating range.
+
+### No. Part
+
+---
+
+# High Limit Thermostat
+## Requirement
+The High Limit Thermostat system shall provide secondary thermal protection for the dryer by monitoring critical temperature conditions near the heating source, interrupting motor operation whenever temperatures exceed the maximum allowable safety limit, preventing continued operation under hazardous overheating conditions, and automatically restoring operation only after temperature levels return below the thermostat reset threshold.
+
+### No. Part
