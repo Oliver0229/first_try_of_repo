@@ -1,5 +1,29 @@
 # **Gas Dryer Requirements**
 
+# Inlet Control Thermistor
+
+## Requirements
+On start key release, the SSD should reflect the inlet/outlet temperature. The drum motor should start, and the corresponding coil should turn on (gas units just turn on the heat). Opening the dryer door or deselecting the test will turn off the drum and heaters.
+
+### No. Part
+- **559C259G003**
+
+![Thermistor](../../images/photos/Dryer/Thermistor.png)
+
+---
+
+# Outlet Control Thermistor
+
+## Requirements
+On start key release, the SSD should reflect the inlet/outlet temperature. The drum motor should start, and the corresponding coil should turn on (gas units just turn on the heat). Opening the dryer door or deselecting the test will turn off the drum and heaters.
+
+### No. Part
+- **559C259G003**
+
+![Thermistor](../../images/photos/Dryer/Thermistor.png)
+
+---
+
 # Gas Valve Coils
 ## Requirement
 The Gas Valve Coils shall receive control commands from the Main Control Board to actuate the Gas Valve and permit gas flow to the burner only when heating is requested and all required operating and safety conditions are satisfied. The coils shall de-energize immediately when heating is terminated or a fault condition is detected, preventing unintended gas flow.
@@ -17,18 +41,6 @@ The Gas Valve shall permit gas flow to the dryer burner only when actuated by th
 - 234D3046P001
 
 ![GasValveAssembly](../../images/photos/Dryer/Gas_Valve2.png)
-
----
-
-# Moisture Sensor Rod
-
-## Requirement
-The moisture rod sensor shall provide a continuous moisture-related electrical signal to the control during sensor-dry operation, and the control shall use this signal to determine dryness progress, dynamically adjust remaining cycle time, and trigger phase transitions toward dry/ready completion while preserving safe operation and service diagnostics; if the sensor input indicates an abnormal condition, the control shall register the corresponding service-visible fault according to platform criteria without delegating interpretation to the user interface.
-
-### No. Part
-- **540B266P001**
-
-![SensorRod](../../images/photos/Dryer/Sensor_Rod.png)
 
 ---
 

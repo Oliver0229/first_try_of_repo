@@ -1,4 +1,18 @@
-# Thermistor
+# **Electric Dryer Requirements**
+
+# Inlet Control Thermistor
+
+## Requirements
+On start key release, the SSD should reflect the inlet/outlet temperature. The drum motor should start, and the corresponding coil should turn on (gas units just turn on the heat). Opening the dryer door or deselecting the test will turn off the drum and heaters.
+
+### No. Part
+- **559C259G003**
+
+![Thermistor](../../images/photos/Dryer/Thermistor.png)
+
+---
+
+# Outlet Control Thermistor
 
 ## Requirements
 On start key release, the SSD should reflect the inlet/outlet temperature. The drum motor should start, and the corresponding coil should turn on (gas units just turn on the heat). Opening the dryer door or deselecting the test will turn off the drum and heaters.
