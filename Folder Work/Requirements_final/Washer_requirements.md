@@ -122,7 +122,7 @@ The system shall provide electrical connectivity between the main control board 
 ### NO.Part
 - **233D2627G003** si existe
 
-![HarnessLidLockSwicth](../../images7photos/Washer/HarnessLidLockSwitch.png)
+![HarnessLidLockSwicth](../../images/photos/Washer/HarnessLidLockSwitch.png)
 
 ---
 
