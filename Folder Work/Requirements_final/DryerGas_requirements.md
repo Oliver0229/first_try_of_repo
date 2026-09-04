@@ -87,6 +87,51 @@ The Flame Detector system shall provide ignition status verification by monitori
 
 ---
 
+# Harness Elec ASM
+## Requirement
+The system shall provide electrical connectivity between the main control board and the lid lock assembly to enable lid status monitoring and lid locking functions during operation.
+
+### NO.Part
+- **234D2622G004** si existe
+
+![HarnessElec](../../images/photos/Dryer/HarnessElecDryer.png)
+
+---
+
+# Harness Door ASM
+## Requirement
+The system shall provide electrical connectivity between the main control board and the door switch assembly to enable door status monitoring during dryer operation.
+
+### NO.Part
+- **189D7183G003** si existe
+
+![HarnessDoor1](../../images/photos/Dryer/HarnessDoor1.png)
+![HarnessDoor2](../../images/photos/Dryer/HarnessDoor2.png)
+
+---
+
+# Harness Comunication ASM
+## Requirement
+The system shall provide electrical connectivity between the user interface and the control system to support command and status communication.
+
+### NO.Part
+- **234D2640G002** si existe 
+
+![HarnessComunication](../../images/photos/Dryer/HarnessComuniction.png)
+
+---
+
+# Harness Gas ASM
+## Requirement
+The system shall provide electrical connectivity between the main control board and the gas heating system, including ignition, flame detection, and gas valve control components.
+
+### NO.Part
+- **234D2639G005**
+
+![HarnessGas](../../)
+
+---
+
 # Safety Thermostat
 ## Requirement
 The Safety Thermostat system shall protect the appliance from abnormal heating conditions, interrupting power to the heating source whenever the calibrated safety threshold is exceeded, maintaining protection throughout the overheating condition, and automatically restoring operation only after the temperature has returned within the defined safe operating range.
@@ -108,5 +153,6 @@ The Outlet Control Thermostat shall regulate drying performance by monitoring ou
 The High Limit Thermostat system shall provide secondary thermal protection for the dryer by monitoring critical temperature conditions near the heating source, interrupting motor operation whenever temperatures exceed the maximum allowable safety limit, preventing continued operation under hazardous overheating conditions, and automatically restoring operation only after temperature levels return below the thermostat reset threshold.
 
 ### No. Part
+- ****
 
-
+---

@@ -24,7 +24,7 @@ On start key release, the SSD should reflect the inlet/outlet temperature. The d
 
 ---
 
-# Sensor Rod
+# Moisture Sensor Rod
 
 ## Requirement
 The moisture rod sensor shall provide a continuous moisture-related electrical signal to the control during sensor-dry operation, and the control shall use this signal to determine dryness progress, dynamically adjust remaining cycle time, and trigger phase transitions toward dry/ready completion while preserving safe operation and service diagnostics; if the sensor input indicates an abnormal condition, the control shall register the corresponding service-visible fault according to platform criteria without delegating interpretation to the user interface.
@@ -58,6 +58,52 @@ The Dryer Drive Motor system shall provide drum rotation and airflow generation 
 
 ---
 
+# Harness Elec ASM
+## Requirement
+The system shall provide electrical connectivity between the main control board and the lid lock assembly to enable lid status monitoring and lid locking functions during operation.
+
+### NO.Part
+- **234D2622G006** si existe
+
+![HarnessElec](../../images/photos/Dryer/HarnessElecDryer.png)
+
+---
+
+# Harness Door ASM
+## Requirement
+The system shall provide electrical connectivity between the main control board and the door switch assembly to enable door status monitoring during dryer operation.
+
+### NO.Part
+- **189D7183G003** si existe
+
+![HarnessDoor1](../../images/photos/Dryer/HarnessDoor1.png)
+![HarnessDoor2](../../images/photos/Dryer/HarnessDoor2.png)
+
+
+---
+
+# Harness Comunication
+## Requirement
+The system shall provide electrical connectivity between the user interface and the control system to support command and status communication.
+
+### NO.Part
+- **234D2640G002** si existe
+
+![HarnessComunication](../../images/photos/Dryer/HarnessComuniction.png)
+
+---
+
+# Harness UI
+## Requirement
+The system shall provide electrical connectivity between the main control board and the user interface components to support cycle selection, start commands, and status indication functions.
+
+### NO.Part
+- **189D7182
+
+![HarnessUI](../../)
+
+---
+
 # Safety Thermostat
 ## Requirement
 The Safety Thermostat system shall protect the appliance from abnormal heating conditions, interrupting power to the heating source whenever the calibrated safety threshold is exceeded, maintaining protection throughout the overheating condition, and automatically restoring operation only after the temperature has returned within the defined safe operating range.
@@ -87,3 +133,4 @@ The Outlet Control Thermostat shall regulate drying performance by monitoring ou
 The High Limit Thermostat system shall provide secondary thermal protection for the dryer by monitoring critical temperature conditions near the heating source, interrupting motor operation whenever temperatures exceed the maximum allowable safety limit, preventing continued operation under hazardous overheating conditions, and automatically restoring operation only after temperature levels return below the thermostat reset threshold.
 
 ### No. Part
+- ****

@@ -20,9 +20,9 @@ The Lid Switch shall provide lid position feedback to the Main Control Board ind
 
 ### No. Part
 
-- 290D3070P002
+- **228C2426P001**
 
-![LidSwitch](../../) //**pendiente**
+![LidSwitch](../../images/photos/Dryer/lid_switchlocked.png) 
 
 ---
 
@@ -98,6 +98,52 @@ The Pressure Sensor shall provide continuous water level feedback to the Main Co
 
 ### No.Part
 
-- ** **
+- The pressure sensor is also mounted to the main board.
 
-![PressureSensor](../../) //**pendiente**
+![PressureSensor](../../images/photos/Washer/PressureSensor.png) 
+
+---
+
+# Harness Main Washer
+## Requirement
+The system shall provide electrical connectivity between the main control board and all washer subsystems, including sensors, actuators, motor drive, water inlet valves, drain pump, and lid lock assembly.
+
+### NO.Part
+- **233D2626G002** si existe
+
+![HarnessMainWasher](../../images/photos/Washer/HarnessMainWasher.png)
+
+---
+
+# Harness Lid Lock/Switch
+## Requirement
+The system shall provide electrical connectivity between the main control board and the lid lock assembly to enable lid status monitoring and lid locking functions during operation.
+
+### NO.Part
+- **233D2627G003** si existe
+
+![HarnessLidLockSwicth](../../images7photos/Washer/HarnessLidLockSwitch.png)
+
+---
+
+# Harness Valve 
+## Requirement
+The system shall provide electrical connectivity between the main control board and the water inlet valve assembly to enable controlled water filling operations.
+
+### NO.Part
+- **233D2634G004**
+
+![HarnessValve](../../)
+
+---
+
+# Harness Pump
+## Requirement
+The system shall provide electrical connectivity between the main control board and the drain pump to enable pump operation during drain cycles.
+
+### NO.Part
+- **233D2635G002**
+
+![HarnessPump](../../)
+
+---
