@@ -4,8 +4,7 @@ This document describes the available user interface controls, indicators, and c
 
 ---
 
-# Cycle Selector
-
+# UI Dryer / Cycle Selector Knob
 The cycle selector is implemented through a rotary knob that allows the user to choose the desired drying program. Each position corresponds to a predefined cycle profile and drying level.
 
 ## Cottons - Less Dry Cycle
@@ -352,4 +351,3 @@ When enabled, the visual indication changes and the cycle configuration includes
 
 ---
 
-![PhotoDryerUI](../images/photos/Dryer_UI_Photo.png)
