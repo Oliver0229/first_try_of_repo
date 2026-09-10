@@ -631,7 +631,6 @@ The system shall illuminate the Damp indicator light exclusively while the damp-
 **Acceptance Criteria:**
 The indicator is active only during the Damp phase.
 
----
 
 ## Dry Indicator
 
@@ -644,7 +643,6 @@ The system shall illuminate the Dry indicator light exclusively while the main d
 **Acceptance Criteria:**
 The indicator is active only during the Dry phase.
 
----
 
 ## Cooling Indicator
 
@@ -657,12 +655,6 @@ The system shall illuminate the Cooling indicator light exclusively while the co
 **Acceptance Criteria:**
 The indicator is active only during the Cooling phase.
 
----
-
-
-
-
-
 # Spin Indicator
 
 The system shall illuminate the Spin indicator light exclusively while the spin phase is in progress and keep it off during all other cycle phases.
@@ -674,7 +666,6 @@ The system shall illuminate the Spin indicator light exclusively while the spin 
 **Acceptance Criteria:**
 The indicator is active only during the Spin phase.
 
----
 
 # Rinse Indicator
 
@@ -687,7 +678,6 @@ The system shall illuminate the Rinse indicator light exclusively while the rins
 **Acceptance Criteria:**
 The indicator is active only during the Spin phase.
 
----
 
 ## Lid Locked Indicator
 
@@ -700,7 +690,6 @@ The system shall illuminate the Lid Locked indicator light while the lid is lock
 **Acceptance Criteria:**
 The indicator is active only during the Lid Locked is activated.
 
----
 
 ## Wash Indicator
 
