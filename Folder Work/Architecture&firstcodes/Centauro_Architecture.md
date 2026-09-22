@@ -17,7 +17,7 @@ The system consists of four electronic boards:
 
 ### Washer Main Board
 
-Main controller for the washing subsystem.
+Main controller for the washing subsystem.  
 
 ### Dryer Main Board
 
@@ -82,7 +82,7 @@ Piezo Alert
 
 ### Quantity
 
-2 Buzzers
+1 Buzzers
 
 ---
 
@@ -98,7 +98,7 @@ Serial Interface
 
 ### Quantity
 
-2 UART Interfaces
+3 UART Interfaces
 
 ---
 
@@ -111,7 +111,6 @@ Firmware programming and debugging.
 ### Interfaces
 
 - SWD
-- JTAG
 
 ---
 
@@ -123,13 +122,7 @@ Digital inputs used for user interaction.
 
 ### Quantity
 
-3 Buttons
-
-Identified in the block diagram as:
-
-- Start
-- Deep Rinse
-- E-Dry
+2 Buttons
 
 ---
 
@@ -141,12 +134,7 @@ Used for cycle and configuration selection.
 
 ### Quantity
 
-2 Knobs
-
-Identified in the block diagram as:
-
-- Cycle
-- Temp
+3 Knobs
 
 ---
 
@@ -167,14 +155,14 @@ Provides power to the UI board.
 
 | Peripheral | Quantity | GPIO/Interface | Configuration |
 |------------|----------|----------------|---------------|
-| Buzzer | 2 | PWM | Output (PWM) |
-| LEDs | 5 | 5 | Output (Digital/High-Drive) |
-| Buttons | 3* | 3 | Input (Digital/Pull-Up) |
-| Knobs | 2 | 2 | Input (Analog/ADC) |
-| Comm Interface | 2 (RX and TX) | UART | UART (RX/TX) |
-| Power Supply | 1 | 1 | VCC (3.3V/5V) |
-| Programming | Variable | Variable | SWD / JTAG / Serial |
-| GEA4 | 2 | 2 | GPIO/DTC |
+| Buzzer | 1 | 1 | PWM Output |
+| LEDs | 5 | 5 | Digital Output |
+| Buttons | 2 | 2 | Digital Input (Pull-Up) |
+| UART Communication | 3 | UART + GPIO | UART RX/TX + BUS_BUSY |
+| Status Indicator | 1 | 1 | Digital Output |
+| Hardware Identification | 3 | ADC | Analog Input |
+| Programming | 3 | SWD | SWCLK, SWDIO, RESET |
+| Power Supply | 1 | VCC/VSS | Power Distribution |
 
 ---
 
@@ -236,7 +224,7 @@ programming operations.
 
 | Pin | Signal | MCU Function Acronymus |
 |---------|-----|---------|
-| 8 | GPIO_HEARTBEAT | PCLBUZO_C/P407 |
+| 24 | GPIO_HEARTBEAT | P100 |
 
 Indicates normal firmware execution and system activity. 
 
@@ -244,11 +232,11 @@ Indicates normal firmware execution and system activity.
 
 | Pin | Signal | MCU Function Acronymus |
 |---------|-----|---------|
-| 22 | GPIO_LED01 | P102 |
-| 23 | GPIO_LED02 | P101 |
-| 24 | GPIO_LED03 | P100 |
-| 25 | GPIO_LED04 | P015 |
-| 26 | GPIO_LED05 | P014 | 
+| 25 | GPIO_LED01 | P015 |
+| 26 | GPIO_LED02 | P014 |
+| 27 | GPIO_LED03 | P013 |
+| 28 | GPIO_LED04 | P012 / AN004 |
+| 29 | GPIO_LED05 | P009 / AN003 | 
 
 ---
 
@@ -258,8 +246,8 @@ Indicates normal firmware execution and system activity.
 
 | Pin | Signal | MCU Function Acronymus |
 |---------|-----|---------|
-| 9 | GPIO_BUTTON01 | P914/SCLA0_A |
-| 10 | GPIO_BUTTON02 | P913/SCAA0_A | 
+| 22 | GPIO_BUTTON01 | P102 |
+| 23 | GPIO_BUTTON02 | P101 | 
 
 ### Description
 
@@ -274,7 +262,7 @@ system interaction and control.
 |---------|-----|---------|
 | 18 | TX_HAIERLINK | P109 |
 | 19 | RX_HAIERLINK | P110 |
-| 12 | GPIO_HAIERLINK_BUS_BUSY | P207 | 
+| 20 | GPIO_HAIERLINK_BUS_BUSY | P112 | 
 
 ### Description
 
@@ -289,15 +277,13 @@ The BUS_BUSY signal indicates communication bus availability.
 
 | Pin | Signal | MCU Function Acronymus |
 |---------|-----|---------|
-| 20 | PWM_BUZZER_VOLUME | P112 |
-| 21 | PWM_BUZZER_FREQUENCY | P103 | 
+| 12 | PWM_BUZZER_FREQUENCY | P207 | 
 
 ### Description
 
 Two PWM channels are allocated for buzzer control:
 
-- PWM_BUZZER_FREQUENCY controls the generated tone frequency.
-- PWM_BUZZER_VOLUME controls the output duty cycle and sound level. 
+- PWM_BUZZER_FREQUENCY controls the generated tone frequency. 
 
 ---
 
@@ -307,8 +293,9 @@ Two PWM channels are allocated for buzzer control:
 
 | Pin | Signal | MCU Function Acronymus |
 |---------|-----|---------|
-| 29 | ADC_SEL_KNOW01 | P009 / AN003 |
-| 28 | ADC_SEL_KNOW02 | P012 / AN004 | 
+| 30 | ADC_SEL_KNOW01 | P008 / AN002 |
+| 31 | ADC_SEL_KNOW02 | P011 / AN001 |
+| 32 | ADC_SEL_KNOW02 | P010 / AN000 | 
 
 ### Description
 
@@ -324,25 +311,25 @@ configuration during system startup.
 |-----|-------------------|-------------|
 | 4 | VSS | VSS |
 | 7 | VCC | VDD |
-| 8 | GPIO_HEARTBEAT | PCLBUZO_C/P407 |
-| 9 | GPIO_BUTTON01 | P914/SCLA0_A |
-| 10 | GPIO_BUTTON02 | P913/SCAA0_A |
-| 12 | GPIO_HAIERLINK_BUS_BUSY | P207 |
+| 12 | PWM_BUZZER_FREQUENCY | P207 |
 | 13 | RESET | RES |
 | 16 | SWCLK | P300 / SWCLK |
 | 17 | SWDIO | P108 / SWDIO |
 | 18 | TX_HAIERLINK | P109 |
 | 19 | RX_HAIERLINK | P110 |
-| 20 | PWM_BUZZER_VOLUME | P112 |
-| 21 | PWM_BUZZER_FREQUENCY | P103 | 
-| 22 | GPIO_LED01 | P102 |
-| 23 | GPIO_LED02 | P101 | 
-| 24 | GPIO_LED03 | P100 |
-| 25 | GPIO_LED04 | P015 |
-| 26 | GPIO_LED05 | P014 |
-| 29 | ADC_SEL_KNOW01 | P009 / AN003 |
-| 28 | ADC_SEL_KNOW02 | P012 / AN004 |
- 
+| 20 | GPIO_HAIERLINK_BUS_BUSY | P112 |
+| 22 | GPIO_BUTTON01 | P102 |
+| 23 | GPIO_BUTTON02 | P101 |
+| 24 | GPIO_HEARTBEAT | P100 |
+| 25 | GPIO_LED01 | P015 |
+| 26 | GPIO_LED02 | P014 |
+| 27 | GPIO_LED03 | P013 |
+| 28 | GPIO_LED04 | P012 / AN004 |
+| 29 | GPIO_LED05 | P009 / AN003 |
+| 30 | ADC_SEL_KNOW01 | P008 / AN002 |
+| 31 | ADC_SEL_KNOW02 | P011 / AN001 |
+| 32 | ADC_SEL_KNOW03 | P010 / AN000 |
+
 ---
 
 ## 11. Acronyms
